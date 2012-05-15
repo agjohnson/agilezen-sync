@@ -1,0 +1,14 @@
+[chili]
+url = http://chili.example.com
+api = 
+uid = 
+
+[github]
+username = 
+password = 
+repo = 
+
+[agilezen]
+api = 
+project = 
+

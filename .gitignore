@@ -1,0 +1,7 @@
+*.pyc
+agilezensync.cfg
+cache.json
+build/
+dist/
+env/
+agilezensync.egg-info/
