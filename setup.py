@@ -13,10 +13,10 @@ setup(
     packages=['agilezensync'],
     install_requires=[
         'requests',
-        'slumber>=0.4.2'
+        'slumber>=0.4.2dev-agjohnson'
     ],
     dependency_links=[
-        'http://github.com/agjohnson/slumber#egg=slumber'    
+        'http://github.com/agjohnson/slumber#egg=slumber-0.4.2dev-agjohnson'
     ],
     entry_points={
       'console_scripts': [
