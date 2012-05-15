@@ -1,12 +1,11 @@
-h1. agilezensync
+# agilezensync
 
-Imports issues from Chili and Github to AgileZen. The sync is
-only one way, and only handles creating/updating stories with text, priority,
-color, and tags.
+Imports issues from Chili and Github to AgileZen. The sync is only one way, and
+only handles creating/updating stories with text, priority, color, and tags.
 
 This is considered alpha, use at your own risk.
 
-h2. TODO
+## TODO
 
 * Add more resource sources -- Bitbucket, etc
 * Add oAuth authentication support to Github
