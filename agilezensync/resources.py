@@ -139,16 +139,16 @@ class Storage():
     def update_relationship(self, ticket):
         '''Update storage with relationship'''
         ticket_key = '{ticket.resource.name}-{ticket.ticket_id}'.format(ticket=ticket)
-        print 'Searching for ticket id {}'.format(ticket_key)
+        print 'Searching for relationship for {key}'.format(key=ticket_key)
         if ticket_key in self.data:
             story_id = self.data[ticket_key]['story']
-            print "Updating story {}".format(story_id)
+            print "Updating story {story_id}".format(story_id=story_id)
             
             story = self.agilezen().stories(story_id)
             if story:
                 story.put(ticket.story_dict())
         else:
-            print "Adding ticket {}".format(ticket.ticket_id)
+            print "Adding ticket {ticket.ticket_id}".format(ticket=ticket)
             story_json = self.agilezen().stories.post(
                 ticket.story_dict()
             )
